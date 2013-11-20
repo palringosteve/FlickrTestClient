@@ -9,9 +9,12 @@
 #import <UIKit/UIKit.h>
 
 /**
- * display the photos and titles from the 
+ * Display the photos and titles from the
  * server using the URL calls provided in the
- * SBFlickrHelp class.
+ * SBFlickrHelp class. 
+ *
+ * Use the SBPhotoListDataSource
+ * to handle the model interation
  */
 @interface SBPhotoListViewController : UICollectionViewController
 

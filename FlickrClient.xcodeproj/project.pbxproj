@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		43C3F725183D1A43001FD8DF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43C3F724183D1A43001FD8DF /* MapKit.framework */; };
+		43C3F728183D1F2D001FD8DF /* SBPhotoListDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C3F727183D1F2D001FD8DF /* SBPhotoListDataSource.m */; };
 		AA1035F1183BC6150014A041 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA1035F0183BC6150014A041 /* Foundation.framework */; };
 		AA1035F3183BC6150014A041 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA1035F2183BC6150014A041 /* CoreGraphics.framework */; };
 		AA1035F5183BC6150014A041 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA1035F4183BC6150014A041 /* UIKit.framework */; };
@@ -23,6 +24,8 @@
 
 /* Begin PBXFileReference section */
 		43C3F724183D1A43001FD8DF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		43C3F726183D1F2D001FD8DF /* SBPhotoListDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBPhotoListDataSource.h; sourceTree = "<group>"; };
+		43C3F727183D1F2D001FD8DF /* SBPhotoListDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBPhotoListDataSource.m; sourceTree = "<group>"; };
 		AA1035ED183BC6150014A041 /* FlickrClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickrClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA1035F0183BC6150014A041 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AA1035F2183BC6150014A041 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -100,6 +103,8 @@
 				AA10362A183BCF440014A041 /* SBPhotoDetailViewController.m */,
 				AA10364C183CE7C50014A041 /* SBFlickrHelper.h */,
 				AA10364D183CE7C50014A041 /* SBFlickrHelper.m */,
+				43C3F726183D1F2D001FD8DF /* SBPhotoListDataSource.h */,
+				43C3F727183D1F2D001FD8DF /* SBPhotoListDataSource.m */,
 			);
 			path = FlickrClient;
 			sourceTree = "<group>";
@@ -182,6 +187,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43C3F728183D1F2D001FD8DF /* SBPhotoListDataSource.m in Sources */,
 				AA10364E183CE7C50014A041 /* SBFlickrHelper.m in Sources */,
 				AA1035FD183BC6150014A041 /* main.m in Sources */,
 				AA10362B183BCF440014A041 /* SBPhotoDetailViewController.m in Sources */,
