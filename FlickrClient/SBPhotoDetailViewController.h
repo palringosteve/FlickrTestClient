@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+/**
+ * Display infomation about the picture.
+ * Use the outlet already created.
+ * For a bonus add any extra infomation.
+ */
 @interface SBPhotoDetailViewController : UIViewController
 
 @end

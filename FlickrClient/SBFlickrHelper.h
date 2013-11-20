@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ * Use AFNetworking to retrive the JSON
+ * objects from the relevent URLs.
+ */
 @interface SBFlickrHelper : NSObject
 
 /**

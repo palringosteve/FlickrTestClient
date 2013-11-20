@@ -14,6 +14,4 @@
 
 @implementation SBPhotoListViewController
 
-
-
 @end
