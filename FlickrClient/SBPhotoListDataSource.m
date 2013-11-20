@@ -7,18 +7,7 @@
 //
 
 #import "SBPhotoListDataSource.h"
-
-/*
- * Use this cell class for the
- * custom photo cell code
- */
-@interface SBPhotoCell : UICollectionViewCell
-
-@end
-
-@implementation SBPhotoCell
-
-@end
+#import "SBPhotoCell.h"
 
 @implementation SBPhotoListDataSource
 
