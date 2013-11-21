@@ -64,6 +64,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43C3F72C183D22FC001FD8DF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		43C3F72D183D2304001FD8DF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		43C3F72E183D230B001FD8DF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		AA1035E4183BC6150014A041 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +118,9 @@
 		AA1035F6183BC6150014A041 /* FlickrClient */ = {
 			isa = PBXGroup;
 			children = (
+				43C3F72C183D22FC001FD8DF /* Model */,
+				43C3F72D183D2304001FD8DF /* View */,
+				43C3F72E183D230B001FD8DF /* Controller */,
 				AA1035FF183BC6150014A041 /* SBAppDelegate.h */,
 				AA103600183BC6150014A041 /* SBAppDelegate.m */,
 				AA103602183BC6150014A041 /* Main.storyboard */,
