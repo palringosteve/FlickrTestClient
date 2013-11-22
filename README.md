@@ -11,5 +11,4 @@ TestClient
 
 __Bonus points__
 - Use Auto Layout.
-- Include an accuracy circle on the map.
 - Display more information about the photo in the [SBPhotoDetailViewController](https://github.com/stevewilford/TestClient/blob/master/FlickrClient/SBPhotoDetailViewController.h).
