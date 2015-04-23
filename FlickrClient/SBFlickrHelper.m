@@ -8,21 +8,36 @@
 
 #import "SBFlickrHelper.h"
 
-NSString * const SBFlickrPhotosURLFormat = @"https://api.flickr.com/services/rest/?method=flickr.people.getPhotos&api_key=f78e2564744ff7257ee56a7c5bfbc99c&user_id=45166873%%40N06&extras=url_sq&per_page=%d&page=%d&format=json&nojsoncallback=1";
+NSString *const SBFlickrAPIKey = @"b159c6d529e39a0808b30535ae68c6c7";
 
-NSString * const SBFlickPhotoGeoURLFormat = @"https://api.flickr.com/services/rest/?method=flickr.photos.geo.getLocation&api_key=f78e2564744ff7257ee56a7c5bfbc99c&photo_id=%@&format=json&nojsoncallback=1";
+NSString *const SBFlickrPhotosURLFormat =
+@"https://api.flickr.com/services/rest/?method=flickr.people.getPhotos\
+&api_key=%@\
+&user_id=45166873%%40N06\
+&extras=url_sq\
+&per_page=%d\
+&page=%d\
+&format=json\
+&nojsoncallback=1";
+
+NSString *const SBFlickPhotoGeoURLFormat =
+@"https://api.flickr.com/services/rest/?method=flickr.photos.geo.getLocation\
+&api_key=%@\
+&photo_id=%@\
+&format=json\
+&nojsoncallback=1";
 
 @implementation SBFlickrHelper
 
 +(NSURL *)URLForPhotosFeedAtPage:(int)pageNumber photosPerPage:(int)numberOfPhotosPerPage
 {
-    NSString *urlString = [NSString stringWithFormat:SBFlickrPhotosURLFormat, numberOfPhotosPerPage, pageNumber];
+    NSString *urlString = [NSString stringWithFormat:SBFlickrPhotosURLFormat, SBFlickrAPIKey, numberOfPhotosPerPage, pageNumber];
     return [NSURL URLWithString:urlString];
 }
 
 +(NSURL *)URLToRetrieveGeoInfoForPhotoWithID:(NSString *)photoID
 {
-    NSString *urlString = [NSString stringWithFormat:SBFlickPhotoGeoURLFormat, photoID];
+    NSString *urlString = [NSString stringWithFormat:SBFlickPhotoGeoURLFormat, SBFlickrAPIKey, photoID];
     return [NSURL URLWithString:urlString];
 }
 
